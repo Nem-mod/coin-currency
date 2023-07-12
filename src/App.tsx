@@ -1,13 +1,14 @@
 import React from 'react';
-import {Button} from "@mui/material";
+import {Header} from "./componets/Header/Header";
+import {Main} from "./componets/Main/Main";
 
 function App() {
-  return (
-    <div className="App">
-      <div className='bg-amber-800'>AAAAA</div>
-        <Button className='bg-amber-800'>Butt</Button>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+        </div>
+    );
 }
 
 export default App;
