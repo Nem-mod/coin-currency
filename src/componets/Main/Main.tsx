@@ -1,6 +1,5 @@
 import {Container, Table, TableCell, TableHead, TableRow} from "@mui/material";
 import {CoinTable} from "./CoinTable";
-
 export const Main = () => {
     return (
         <main className={'mt-16'}>

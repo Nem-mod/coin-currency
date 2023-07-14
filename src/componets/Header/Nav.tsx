@@ -5,21 +5,20 @@ import {NavLink} from "./NavLink";
 export const Nav = () => {
     return (
         <nav className='flex items-center h-full pt-2 pb-2 '>
-			<Logo/>
+            <Logo/>
 
             <List className='flex w-full items-end gap-10'>
-
                 <ListItem>
-                    <NavLink title={'Home'}/>
+                    <NavLink link={'/'} title={'Home'}/>
                 </ListItem>
                 <ListItem>
-                    <NavLink title={'Cryptocurrencies'}/>
+                    <NavLink link={'#'} title={'Cryptocurrencies'}/>
                 </ListItem>
                 <ListItem>
-                    <NavLink title={'News'}/>
+                    <NavLink link={'/news'} title={'News'}/>
                 </ListItem>
                 <ListItem>
-                    <NavLink title={'Info'}/>
+                    <NavLink link={'#'} title={'Info'}/>
                 </ListItem>
             </List>
 

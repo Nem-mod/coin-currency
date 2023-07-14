@@ -1,8 +1,8 @@
 import {createAsyncThunk, createSlice, Reducer, Slice} from "@reduxjs/toolkit";
-import axios from "../../axios";
+import {axiosCoinApi} from "../../axios";
 
 export const fetchCoins = createAsyncThunk('exchanges/fetchExchanges', async (arg, thunkAPI) => {
-    const { data } = await axios.get(
+    const { data } = await axiosCoinApi.get(
         '/coins'
     )
     return data.data;
