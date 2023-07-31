@@ -12,17 +12,20 @@ export const News = () => {
     }, []);
     return (
         <>
-            <Container className={'mt-16 flex gap-10 flex-wrap justify-between'}>
-                {news
-                    && news.data.value
-                        .map(element =>
-                            <NewsCard
-                                key={element.name}
-                                title={element.name}
-                                description={element.description}
-                                url={element.url}
-                                imgUrl={element.image?.thumbnail?.contentUrl}/>)
-                }
+            <Container>
+                <div className={'mt-16 flex gap-10 flex-wrap justify-between max-[665px]:justify-center'}>
+                    {news
+                        && news.data.value
+                            .map(element =>
+                                <NewsCard
+                                    key={element.name}
+                                    title={element.name}
+                                    description={element.description}
+                                    url={element.url}
+                                    imgUrl={element.image?.thumbnail?.contentUrl}
+                                />)
+                    }
+                </div>
             </Container>
         </>
     )

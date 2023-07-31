@@ -35,17 +35,17 @@ export const CoinTableRow:FC<CurrencyListItemProps> = ({
             <TableCell>
                 <div className={'flex items-center'}>
                     <img src={iconUrl} className={'w-12'} alt={name}/>
-                    <span className={'ml-2 text-xm font-semibold'}>{name}</span>
-                    <span className={'ml-2 text-xs text-gray-400'}>{symbol}</span>
+                    <span className={'ml-2 text-xm font-semibold max-[600px]:hidden'}>{name}</span>
+                    <span className={'ml-2 text-xs text-gray-400 max-[600px]:hidden'}>{symbol}</span>
                 </div>
             </TableCell>
             <TableCell>
                 <div>{transformBigNumber(price) + ' $'}</div>
             </TableCell>
-            <TableCell>
+            <TableCell className={'max-[600px]:hidden'}>
                 <div>{transformBigNumber(volume) + ' $'}</div>
             </TableCell>
-            <TableCell>
+            <TableCell className={'max-[600px]:hidden'}>
                 <div>{marketCap + ' $'}</div>
             </TableCell>
 

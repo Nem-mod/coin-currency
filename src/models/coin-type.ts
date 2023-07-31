@@ -1,0 +1,16 @@
+export interface CoinDataInterface {
+    '24hVolume': string,
+    btcPrice: number,
+    change: number,
+    color: string,
+    iconUrl: string,
+    listedAt: number,
+    lowVolume: boolean,
+    marketCap: string,
+    name: string,
+    price: number,
+    rank: number,
+    symbol: string,
+    tier: number,
+    uuid: string,
+}

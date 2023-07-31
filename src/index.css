@@ -5,5 +5,10 @@
 @tailwind utilities;
 
 body {
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+    height: 100%;
 }
